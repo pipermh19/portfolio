@@ -69,7 +69,6 @@ class App extends React.Component {
           <Route path="/GoCorsicanaPage" component={GoCorsicana} />
           <Route path="/TrackerPage" component={Tracker} />
           <Route path="/CatalogPage" component={Catalog} />
-          <Route component={Home}/>
 
           {/*<Footer />*/}
 
