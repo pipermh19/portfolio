@@ -77,13 +77,12 @@ class App extends React.Component {
     );
   }
 }
+const Home = () => <HomePage title={this.state.home.title}  subTitle={this.state.home.subTitle} text={this.state.home.text} />
+const About = () => <AboutPage title={this.state.about.title} />
+const Contact = () => <ContactPage title={this.state.contact.title} />
+const Work = () => <WorkPage title={this.state.work.title} />
+const GoCorsicana = () => <GoCorsicanaPage/>
+const Tracker = () => <TrackerPage/>
+const Catalog = () => <CatalogPage/>
 
-  const Home = () => <HomePage title={this.state.home.title}  subTitle={this.state.home.subTitle} text={this.state.home.text} />
-  const About = () => <AboutPage title={this.state.about.title} />
-  const Contact = () => <ContactPage title={this.state.contact.title} />
-  const Work = () => <WorkPage title={this.state.work.title} />
-  const GoCorsicana = () => <GoCorsicanaPage/>
-  const Tracker = () => <TrackerPage/>
-  const Catalog = () => <CatalogPage/>
-
-  export default App;
+export default App;
