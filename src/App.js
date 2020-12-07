@@ -62,13 +62,13 @@ class App extends React.Component {
               </Navbar.Collapse>
           </Navbar>
 
-          <Route exact path="/" component={Home}/>
-          <Route exact path="/about" component={About}/>
-          <Route exact path="/contact" component={Contact} />
-          <Route exact path="/work" component={Work} />
-          <Route exact path="/GoCorsicanaPage" component={GoCorsicana} />
-          <Route exact path="/TrackerPage" component={Tracker} />
-          <Route exact path="/CatalogPage" component={Catalog} />
+          <Route exact path="/" render={<HomePage title={this.state.home.title}  subTitle={this.state.home.subTitle} text={this.state.home.text} />}/>
+          <Route exact path="/about" render={<AboutPage title={this.state.about.title} /> } />
+          <Route eaxct path="/contact" render={() => <ContactPage title={this.state.contact.title} />} />
+          <Route exact path="/work" render={() => <WorkPage title={this.state.work.title} />} />
+          <Route exact path="/GoCorsicanaPage" render={() => <GoCorsicanaPage/>} />
+          <Route exact path="/TrackerPage" render={() => <TrackerPage/>} />
+          <Route exact path="/CatalogPage" render={() => <CatalogPage/>} />
 
           {/*<Footer />*/}
 
@@ -77,12 +77,5 @@ class App extends React.Component {
     );
   }
 }
-const Home = () => <HomePage title={this.state.home.title}  subTitle={this.state.home.subTitle} text={this.state.home.text} />
-const About = () => <AboutPage title={this.state.about.title} />
-const Contact = () => <ContactPage title={this.state.contact.title} />
-const Work = () => <WorkPage title={this.state.work.title} />
-const GoCorsicana = () => <GoCorsicanaPage/>
-const Tracker = () => <TrackerPage/>
-const Catalog = () => <CatalogPage/>
 
 export default App;
