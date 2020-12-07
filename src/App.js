@@ -64,13 +64,12 @@ class App extends React.Component {
 
         <Switch>
           <Route exact path="/" component={Home}/>
-          <Route path="/about" component={About}/>
-          <Route path="/contact" component={Contact} />
-          <Route path="/work" component={Work} />
-          <Route path="/GoCorsicanaPage" component={GoCorsicana} />
-          <Route path="/TrackerPage" component={Tracker} />
-          <Route path="/CatalogPage" component={Catalog} />
-          <Route component={Home} />
+          <Route exact path="/about" component={About}/>
+          <Route exact path="/contact" component={Contact} />
+          <Route exact path="/work" component={Work} />
+          <Route exact path="/GoCorsicanaPage" component={GoCorsicana} />
+          <Route exact path="/TrackerPage" component={Tracker} />
+          <Route exact path="/CatalogPage" component={Catalog} />
         </Switch>
 
           {/*<Footer />*/}
