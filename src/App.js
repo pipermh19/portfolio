@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom'
-import {BrowserRouter as HashRouter, Route, Link} from "react-router-dom";
+import {BrowserRouter as HashRouter, Route, Link,} from "react-router-dom";
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -69,6 +69,7 @@ class App extends React.Component {
           <Route path="/GoCorsicanaPage" component={GoCorsicana} />
           <Route path="/TrackerPage" component={Tracker} />
           <Route path="/CatalogPage" component={Catalog} />
+          <Route component={Home}/>
 
           {/*<Footer />*/}
 
