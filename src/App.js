@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom'
-import {BrowserRouter as HashRouter, Route, Link, Switch} from "react-router-dom";
+import {BrowserRouter as HashRouter, Route, Link} from "react-router-dom";
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -62,7 +62,6 @@ class App extends React.Component {
               </Navbar.Collapse>
           </Navbar>
 
-        <Switch>
           <Route exact path="/" component={Home}/>
           <Route exact path="/about" component={About}/>
           <Route exact path="/contact" component={Contact} />
@@ -70,7 +69,6 @@ class App extends React.Component {
           <Route exact path="/GoCorsicanaPage" component={GoCorsicana} />
           <Route exact path="/TrackerPage" component={Tracker} />
           <Route exact path="/CatalogPage" component={Catalog} />
-        </Switch>
 
           {/*<Footer />*/}
 
